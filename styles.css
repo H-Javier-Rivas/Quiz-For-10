@@ -1,0 +1,280 @@
+/* Estilos generales (base) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo aplicado a todas las anclas */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para el encabezado y logo */
+header {
+  background-color: #333;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  /* transition: all 0.3s ease-in-out; */
+  /* padding: 10px 20px; */
+}
+
+.logo:hover {
+  transform: scale(1);
+  box-shadow: 0 50px 100px rgba(255, 255, 255, 1);
+}
+
+.menu-principal a {
+  margin-left: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+}
+
+.menu-principal a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Estilos de la sección principal - side bar, otras secciones */
+#main-container {
+  display: flex;
+  /* align-items: flex-start; */
+  /* flex-wrap: wrap; /* Permite que los elementos fluyan en pantallas pequeñas */
+  background-color: #333;
+}
+
+#aside-temas {
+  padding: 20px;
+  background-color: #eeeeee;
+  flex: 1 1 20%;
+  cursor: pointer;
+  height: 100vh;
+}
+
+.secciones {
+  /* padding: 20px; */
+  flex: 1 1 80%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.secciones .pregunta {
+  height: 100vh;
+  background-image: url('imagenes/Chica-estudiando.jpg');
+  background-size: cover;
+  /* Ajusta la imagen para cubrir todo el contenedor */
+  background-repeat: no-repeat;
+  /* Evita repetir la imagen */
+  /* background-position: center; /* Centra la imagen */
+  opacity: 1;
+  /* Ajusta la opacidad para que sea translúcida */
+  padding: 0 10px;
+}
+
+.titulo-h2 {
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+.secciones .pregunta #pregunta {
+  color: white;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+
+.secciones .pregunta #tarjetas {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenido-tarjeta {
+  /* Estilos básicos de la tarjeta */
+  background-color: #025d88;
+  border: 2px solid #000000;
+  color: whitesmoke;
+  border-radius: 10px;
+  ;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra inicial */
+  transition: all 0.3s ease;
+  /* Transición para los cambios */
+  /* flex: 1 0 auto; */
+  font-size: medium;
+  text-align: center;
+  max-width: 40%;
+}
+
+.contenido-tarjeta:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  /* Sombra al pasar el mouse */
+  transform: scale(1.05);
+  /* Aumenta el tamaño en un 1% */
+  cursor: pointer;
+}
+
+.secciones article {
+  flex: 1;
+}
+
+.verificar {
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.retroalimentacion {
+  display: none;
+  color: green;
+}
+
+.recursos {
+  display: none;
+}
+
+.comentarios {
+  display: none;
+}
+
+footer {
+  padding: 0;
+  background-color: rgb(12, 15, 23);
+  color: whitesmoke;
+  text-align: center;
+  font-size: small;
+}
+
+/* Estilos para el contenedor del formulario */
+
+
+/* Estilos base para formularios en pantallas pequeñas */
+#login-form,
+#register-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  /* Ocupa un 90% del ancho en pantallas pequeñas */
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#login-form h2,
+#register-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos para las etiquetas */
+#login-form label,
+#register-form label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #333;
+}
+
+/* Estilos para los campos de texto */
+#login-form input[type="text"],
+#login-form input[type="password"],
+#register-form input[type="text"],
+#register-form input[type="password"] {
+  width: calc(100% - 22px);
+  /* Ancho completo del contenedor - padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Estilos para los botones */
+#login-form button,
+#register-form button {
+  background-color: #025d88;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login-form button:hover,
+#register-form button:hover {
+  background-color: #01415f;
+}
+
+/* Estilos para mensajes de error */
+#register-error {
+  color: red;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Media query para pantallas más grandes (ej: laptops y PCs) */
+@media (max-width: 600px) {
+  #main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+  }
+
+  #aside-temas {
+    height: min-content;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Estilos para el modal */
+#modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro transparente */
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}

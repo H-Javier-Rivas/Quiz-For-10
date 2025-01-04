@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz-For-10</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" title="¡ Clic aquí para realizar un nuevo Quiz-For-10 !">Quiz For 10</a>
+    </div>
+    <nav class="menu-principal" id="menu-principal">
+      <a href="#" id="login-button">Iniciar Sesión</a>
+      <a href="#" id="register-button">Registrarse</a>
+    </nav>
+  </header>
+
+  <main id="main-container">
+    <aside id="aside-temas" class="aside-temas">
+      <h2>Temas</h2>
+    </aside>
+
+    <div class="secciones">
+      <section class="pregunta">
+        <h2 class="titulo-h2">Pregunta:</h2>
+        <h3 id="pregunta"></h3>
+        <div id="tarjetas" class="contenedor-de-tarjetas"></div>
+        <button class="verificar">Verificar respuesta</button>
+      </section>
+
+      <section class="respuesta">
+        <div class="retroalimentacion">
+          <p>¡Correcto! La media es 4.</p>
+        </div>
+      </section>
+
+      <section class="recursos">
+        <article>
+          <p>Ver vídeo la clase</p>
+        </article>
+      </section>
+
+      <section class="comentarios">
+        <article>
+          <p>Comentarios de los estudiantes ...</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Contenedor modal -->
+    <div id="modal-container" style="display: none;">
+
+        <!-- Formulario de inicio de sesión -->
+        <form id="login-form" style="display: none;">
+          <h2>Iniciar Sesión</h2>
+          <label for="login-username">Nombre de Usuario:</label>
+          <input type="text" id="login-username" value="invitado" required>
+          <label for="login-password">Contraseña:</label>
+          <input type="password" id="login-password" value="12345" required>
+          <button type="submit">Iniciar Sesión</button>
+          <!-- <button id="login-close-modal-button">Cerrar</button> -->
+          <div id="login-error" class="error"></div>
+        </form>
+
+        <!-- Formulario de registro -->
+        <form id="register-form" style="display: none;">
+          <h2>Registrarse</h2>
+          <label for="register-username">Nombre de Usuario:</label>
+          <input type="text" id="register-username" required>
+          <label for="register-password">Contraseña:</label>
+          <input type="password" id="register-password" required>
+          <button type="submit">Registrarse</button>
+          <!-- <button id="register-close-modal-button">Cerrar</button> -->
+          <div id="register-error" class="error"></div>
+        </form>
+    </div>
+
+  </main>
+  <footer>
+    <p>Desarrollado por H. Javier Rivas Arias © 2025</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
