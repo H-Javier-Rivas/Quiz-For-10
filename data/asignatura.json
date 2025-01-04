@@ -178,8 +178,8 @@
             "pregunta": "¿Qué imagen corresponde a un experimento aleatorio?",
             "tarjetaTipo": "imagen",
             "opciones": [
-              "imagenes/dado.png",
-              "imagenes/suma.png"
+              "data/dado.png",
+              "data/suma.png"
             ],
             "respuestaCorrecta": "0"
           }

@@ -29,7 +29,7 @@ function handleSessionState() {
     });
 
     // Cargar datos de la asignatura si el usuario ha iniciado sesión
-    cargarDatos('asignatura.json')
+    cargarDatos('data/asignatura.json')
       .then(data => {
         const asideElement = document.querySelector('aside');
 
