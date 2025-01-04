@@ -46,10 +46,15 @@
         "contenido": "Estadística en la Investigación. Estadística en la Ingeniería. Estadística en lo Cotidiano. Estadística y la Tecnología.",
         "preguntas": [
           {
-            "pregunta": "*** No disponible ***",
+            "pregunta": "¿En cuál de los siguientes campos NO es comúnmente utilizada la estadística?",
             "tarjetaTipo": "texto",
-            "opciones": ["2", "4", "6"],
-            "respuestaCorrecta": "4"
+            "opciones": [
+              "Investigación científica para analizar datos genéticos y evaluar el impacto ambiental", 
+              "Periodismo para evaluar la información, entender la investigación y determinar la validez de las afirmaciones", 
+              "Diseño de modas para crear patrones y tendencias en la industria de la ropa",
+              "Finanzas para evaluar el valor de bonos y crear carteras de inversión"
+            ],
+            "respuestaCorrecta": "2"
           }
         ]
       },
