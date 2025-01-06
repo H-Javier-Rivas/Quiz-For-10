@@ -1,7 +1,7 @@
 // authManager.js
 
 export function registerUser(username, password) {
-  console.log(username, password);
+  console.log(username, password); // Cuando la aplicación funcione, quitar esta línea.
   try {
     let users = JSON.parse(localStorage.getItem('users') || '{}');
 

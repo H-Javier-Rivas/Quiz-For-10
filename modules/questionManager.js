@@ -1,7 +1,7 @@
 // questionManager.js
 import * as uiManager from './uiManager.js';
 
-export function gestionarPreguntas(objetivoItem, objetivosList, objetivo) {
+export function gestionarPreguntas(objetivoItem, objetivosList, objetivo, pregunta) {
 
   // EVENTO DE CLICK PARA SELECCIONAR UNA PREGUNTA ALEATORIA
   objetivoItem.addEventListener('click', () => {
@@ -14,7 +14,7 @@ export function gestionarPreguntas(objetivoItem, objetivosList, objetivo) {
     const preguntaAleatoria = objetivo.preguntas[indiceAleatorio];
 
     // Actualizar la interfaz a través del uiManager
-    uiManager.actualizarTextoPregunta(document.getElementById('pregunta'), preguntaAleatoria.pregunta);
+    uiManager.actualizarTextoPregunta(pregunta, preguntaAleatoria.pregunta);
     uiManager.limpiarContenedorTarjetas(document.getElementById('tarjetas'));
 
     // Para cada opción de la pregunta, crear la tarjeta y agregarla al contenedor
